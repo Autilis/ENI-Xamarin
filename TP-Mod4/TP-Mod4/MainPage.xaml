@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TP_Mod4.MainPage">
+
+
+    <StackLayout>
+        <StackLayout BackgroundColor="#58B0F0" Orientation="Horizontal" HeightRequest="25" >
+            <Label Text="NOUVEAU"   HorizontalOptions="StartAndExpand"  Padding="10, 0, 0, 0"/>
+            <Label Text="ACCUEIL"   HorizontalOptions="CenterAndExpand" />
+            <Label Text="RECHERCHER" HorizontalOptions="EndAndExpand"  Padding="0, 0, 10, 0" />
+        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="5">
+                <StackLayout Orientation="Horizontal" BackgroundColor="Red">
+                    <Label Text="Cedrid@monmail.com"   HorizontalOptions="StartAndExpand"  />
+                    <Label Text="50s"   HorizontalOptions="EndAndExpand" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="Orange">
+                    <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."  />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="Aqua" >
+                    <Label Text="REPONDRE"   HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" />
+                    <Label Text="RETWEET"   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+                    <Label Text="FAVORIS" HorizontalOptions="CenterAndExpand"   VerticalOptions="CenterAndExpand"  />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+        <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal" HeightRequest="75" BackgroundColor="Beige" >
+            <Label Text="FIL"           HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" />
+            <Label Text="NOTIFICATIONS" HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand"  />
+            <Label Text="MESSAGES"      HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" />
+            <Label Text="MOI"           HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+
+    </StackLayout>
+    
+        
+        
+        
+            
+            
+    
+    
+
+
+</ContentPage>
