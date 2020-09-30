@@ -74,7 +74,7 @@ namespace TP_Mod7.services
             return result;
         }
 
-        public void GetTweets(string chaine)
+        public List<Tweet> GetTweets(string chaine)
         {
             //identifiant
             //date de création
@@ -82,7 +82,9 @@ namespace TP_Mod7.services
             //nom de l’utilisateur,
             //identifiant de l’utilisateur
             //et pseudo de l’utilisateur
-            Tweet tw = new Tweet();
+            List<Tweet> tw = new List<Tweet>();
+
+            return tw;
         }
     }
 }
