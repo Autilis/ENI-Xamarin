@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:utils="clr-namespace:TP1.Utils"
+             xmlns:views="clr-namespace:TP1.Views"
+             mc:Ignorable="d"
+             x:Class="TP1.ListeTweet">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="75"/>
+                </Grid.RowDefinitions>
+                <views:Header BackgroundColor="#58B0F0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <ContentView x:Name="ListTweets" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <!--<ScrollView HorizontalOptions="FillAndExpand">-->
+                    <ScrollView>
+                        <!--<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">-->
+                        <StackLayout x:Name="StacklayoutTweets">
+                        </StackLayout>
+                    </ScrollView>
+                </ContentView>
+                <views:Footer Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

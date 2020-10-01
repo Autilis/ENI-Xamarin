@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TP1.ListViewTweet">
+    <StackLayout>
+        <!-- Place new controls here -->
+        <ListView x:Name="TweetList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="25"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                             <StackLayout>
+                                <Image Source="https://picsum.photos/50/50/?random" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0"/>
+                                <Label Text="{Binding Username}" Grid.Row="0" Grid.Column="1"></Label>
+                                <Label Text="{Binding Identifiant}" Grid.Row="0" Grid.Column="2"></Label>
+                                <Label Text="{Binding CreationDate}" TextColor="Gray" Grid.Row="0" Grid.Column="3"></Label>
+                                <Label Text="{Binding Text}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"></Label>
+                            </StackLayout>
+                        </Grid>
+                            <StackLayout Orientation="Horizontal">
+                                <ImageButton Source="{utils:ImageFromResources TP1.Images.reply.png}" HorizontalOptions="CenterAndExpand"></ImageButton>
+                                <ImageButton Source="{utils:ImageFromResources TP1.Images.retweet.png}" HorizontalOptions="CenterAndExpand"></ImageButton>
+                                <ImageButton Source="{utils:ImageFromResources TP1.Images.favorite.png}" HorizontalOptions="CenterAndExpand"></ImageButton>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
